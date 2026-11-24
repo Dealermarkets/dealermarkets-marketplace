@@ -1,13 +1,13 @@
-# DealerMarkets plugin marketplace (private)
+# DealerMarkets plugin marketplace
 
 One marketplace that lists both DealerMarkets plugins, each kept in its own repo:
 
 | Plugin | Repo | For |
 | --- | --- | --- |
 | `dealermarkets` | [`Dealermarkets/dealermarkets-plugin`](https://github.com/Dealermarkets/dealermarkets-plugin) | Dealers: search and compare products |
-| `dealermarkets-admin` | [`Dealermarkets/dealermarkets-admin-plugin`](https://github.com/Dealermarkets/dealermarkets-admin-plugin) | App Admins (Jim, Mike) only |
+| `dealermarkets-admin` | [`Dealermarkets/dealermarkets-admin-plugin`](https://github.com/Dealermarkets/dealermarkets-admin-plugin) | DealerMarkets App Admins only |
 
-Status: **test** (2026-11-24). Both entries point at the plugins' `marketplace-test` branches, whose connectors use the staging Worker (`dealermarkets-mcp-staging.dealermarkets.workers.dev`). The aim is to find out whether adding this repo once is enough for new plugin versions to reach the user.
+Status: **test**. Both entries point at the plugins' `marketplace-test` branches, whose connectors use the staging server.
 
 ## Files
 
@@ -21,10 +21,10 @@ ChatGPT also reads `.claude-plugin/marketplace.json` as a "legacy-compatible" fa
 ## Adding it
 
 - **ChatGPT desktop:** Plugins › Add › Add a marketplace, then enter `https://github.com/Dealermarkets/dealermarkets-marketplace`.
-- **Claude:** Customize › Plugins › Add › Add marketplace, enter `Dealermarkets/dealermarkets-marketplace`, connect GitHub and give the Claude GitHub App access to this repo and both plugin repos.
+- **Claude:** Customize › Plugins › Add › Add marketplace, enter `Dealermarkets/dealermarkets-marketplace`, connect GitHub if asked.
 - **Claude Code:** `claude plugin marketplace add Dealermarkets/dealermarkets-marketplace`.
 
-All three repos are private, so whoever adds the marketplace needs read access to all of them.
+The dealer plugin repo is still private, so only people with access to it can install that plugin.
 
 ## Releasing a plugin version
 
