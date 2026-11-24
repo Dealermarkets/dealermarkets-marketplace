@@ -5,24 +5,11 @@
   },
   "plugins": [
     {
-      "name": "dealermarkets",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/Dealermarkets/dealermarkets-plugin.git",
-        "ref": "marketplace-test"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
       "name": "dealermarkets-admin",
       "source": {
         "source": "url",
         "url": "https://github.com/Dealermarkets/dealermarkets-admin-plugin.git",
-        "ref": "marketplace-test"
+        "ref": "main"
       },
       "policy": {
         "installation": "AVAILABLE",

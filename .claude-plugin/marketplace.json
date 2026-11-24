@@ -1,26 +1,17 @@
 {
   "name": "dealermarkets",
-  "description": "DealerMarkets plugins: the dealer plugin and the private admin plugin",
+  "description": "DealerMarkets plugins",
   "owner": {
     "name": "DealerMarkets, LLC"
   },
   "plugins": [
     {
-      "name": "dealermarkets",
-      "description": "Search the DealerMarkets catalog of F&I products for auto dealers",
-      "source": {
-        "source": "github",
-        "repo": "Dealermarkets/dealermarkets-plugin",
-        "ref": "marketplace-test"
-      }
-    },
-    {
       "name": "dealermarkets-admin",
-      "description": "For DealerMarkets App Admins: the admin connector and fact extraction",
+      "description": "For DealerMarkets App Admins: the admin connector",
       "source": {
         "source": "github",
         "repo": "Dealermarkets/dealermarkets-admin-plugin",
-        "ref": "marketplace-test"
+        "ref": "main"
       }
     }
   ]
